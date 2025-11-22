@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Apex Web Design</title>
+    <style>
+        body {
+            background-color: #eee6ff; 
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .header-section {
+            background-color: #eee6ff;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h2, p {
+            margin: 10px;
+            text-align: center;
+            color: #220066; 
+        }
+
+        nav {
+            background-color: #220066; 
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #220066;
+        }
+
+        ul li a {
+            display: block;
+            color: #ddccff; 
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            background-color: #330099; 
+            color: white;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(34, 0, 102, 0.7), rgba(34, 0, 102, 0.7)), url("https://miro.medium.com/0*SPjH6EGSjLcMPv8Q.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ddccff; 
+            text-align: center;
+            padding: 20px;
+        }
+
+        .about-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px 50px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .about-card h2 {
+            color: #15749d;
+            font-size: 32px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .about-card p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #15749d;
+            font-weight: bold;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            gap: 20px;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #15749d;
+            margin: 0;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0 0 0;
+        }
+
+        .stat-desc {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .footer {
+            background-color: #1a004d;
+            color: #ddccff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .stats-container {
+                flex-direction: column;
+            }
+            .about-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <h2 style="font-size: 28px;">Apex Web Design</h2>
+        <p style="font-size: 16px; color: #4b2e83;">Crafting Modern Websites That Inspire</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="about-card">
+            <h2>Who We Are</h2>
+            
+            <p>
+                Welcome to <span class="highlight">Apex Web Design</span>. We are a dedicated team of freelancers passionate about building clean, efficient, and beautiful web solutions.
+            </p>
+
+            <p>
+                Founded in 2024, our mission is to help small businesses and startups establish a powerful online presence without the complexity of large agencies. We believe in transparent code, user-centric design, and long-term partnerships.
+            </p>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <p class="stat-label">Projects</p>
+                </div>
+                
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <p class="stat-label">Happy Clients</p>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <p class="stat-label">Support</p>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number"><a href="sdg.html">SDG8</a></span>
+                    <p class="stat-label">Decent Work</p>
+                    <p class="stat-desc">& Economic Growth</p>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number">Topic 4</span>
+                    <p class="stat-label">improving global resource efficiency</p>
+                    <p class="stat-desc">in consumption and production.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Apex Web Design/group6. All rights reserved.
+    </div>
+
+</body>
+</html>

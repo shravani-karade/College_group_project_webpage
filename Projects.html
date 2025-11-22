@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Apex Web Design</title>
+    <style>
+        body {
+            background-color: #eee6ff; 
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .header-section {
+            background-color: white;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            background-color: #eee6ff;
+        }
+
+
+        h2, p {
+            margin: 10px;
+            text-align: center;
+            color: #220066; 
+        }
+
+        nav {
+            background-color: #220066; 
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #220066;
+        }
+
+        ul li a {
+            display: block;
+            color: #ddccff; 
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            background-color: #330099; 
+            color: white;
+        }
+
+        
+        .projects-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        
+
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 1px solid #dcdcdc;
+            text-align: center;
+        }
+
+       
+        h3 {
+            color: #15749d; 
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .project-desc {
+            color: #1c96ca; 
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .tech-stack {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #220066;
+            color: #ddccff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #15749d;
+            color: white;
+        }
+        .project-card:hover {
+            transform: scale(1.1);
+            border-color: #15749d;
+        }
+        .hero {
+            background: linear-gradient(rgba(34, 0, 102, 0.7), rgba(34, 0, 102, 0.7)), url("https://miro.medium.com/0*SPjH6EGSjLcMPv8Q.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ddccff; 
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="header-section">
+        
+            <h2>Apex Web Design</h2>
+            <p>Crafting Modern Websites That Inspire</p>
+        
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+<div class="hero">
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Calculator</h3>
+            <p class="project-desc">
+                A beginner-friendly calculator web app that performs basic arithmetic operations. Features a clean UI and responsive design for seamless use across devices.
+            </p>
+            <div class="tech-stack">
+                <strong>Tech Used:</strong> HTML, CSS, JavaScript
+            </div>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>My Micro Blog</h3>
+            <p class="project-desc">
+                A clean and simple blog platform where you can write and publish posts. Includes a basic login system for the admin to manage content securely.
+            </p>
+            <div class="tech-stack">
+                <strong>Tech Used:</strong> HTML, CSS
+            </div>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+    </div>
+</div>
+<footer style="text-align: center; padding: 20px; background: #220066; color: #ddccff; margin-top: 40px;">
+    &copy; 2024 Apex Web Design/group6. All rights reserved.
+</footer>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Apex Web Design</title>
+    <style>
+        body {
+            background-color: #eee6ff;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .header-section {
+            background-color: white;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            background-color: #eee6ff;
+        }
+
+        fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2, p {
+            margin: 10px;
+            text-align: center;
+            color: #220066;
+        }
+
+        nav {
+            background-color: #220066;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #220066;
+        }
+
+        ul li a {
+            display: block;
+            color: #ddccff;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            background-color: #330099;
+            color: white;
+        }
+
+        .services-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .services-container {
+                grid-template-columns: 1fr 1fr 1fr; 
+            }
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 1px solid #dcdcdc;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.1);
+            border-color: #15749d;
+        }
+
+        h3 {
+            color: #15749d;
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .service-desc {
+            color: #1c96ca;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .price {
+            display: block;
+            margin-top: 15px;
+            color: #220066;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .hero {
+            background: linear-gradient(rgba(34, 0, 102, 0.7), rgba(34, 0, 102, 0.7)), url("https://miro.medium.com/0*SPjH6EGSjLcMPv8Q.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ddccff; 
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="header-section">
+        <fieldset>
+            <h2>Apex Web Design</h2>
+            <p>Crafting Modern Websites That Inspire</p>
+        </fieldset>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+<div class="hero">
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>Web Design</h3>
+            <p class="service-desc">
+                Custom, responsive websites designed to look great on desktops, tablets, and mobile devices.
+            </p>
+            <span class="price">Starts at 500₹</span>
+        </div>
+
+        <div class="service-card">
+            <h3>SEO Optimization</h3>
+            <p class="service-desc">
+                Improve your ranking on Google and drive more organic traffic to your business.
+            </p>
+            <span class="price">Starts at 300₹</span>
+        </div>
+
+        <div class="service-card">
+            <h3>Full Stack Dev</h3>
+            <p class="service-desc">
+                Complex web applications with database integration, user authentication, and custom logic.
+            </p>
+            <span class="price">Starts at 1000₹</span>
+        </div>
+
+    </div>
+</div>
+<footer style="text-align: center; padding: 20px; background: #220066; color: #ddccff; margin-top: 40px;">
+    &copy; 2024 Apex Web Design/group6. All rights reserved.
+</footer>
+</body>
+</html>
