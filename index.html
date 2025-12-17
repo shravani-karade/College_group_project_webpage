@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Apex Web Design</title>
+    <style>
+        body {
+            background-color: #eee6ff;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .header-section {
+            background-color: white;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            background-color: #eee6ff;
+        }
+
+        fieldset {
+            border: 0px solid black;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2, p {
+            margin: 10px;
+            text-align: center;
+            color: #220066;
+        }
+
+        nav {
+            background-color: #220066;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #220066;
+        }
+
+        ul li a {
+            display: block;
+            color: #ddccff;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            background-color: #330099;
+            color: white;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(34, 0, 102, 0.7), rgba(34, 0, 102, 0.7)), url("web_.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ddccff; 
+            text-shadow: 2px 2px 5px black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0 0 20px 0;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 24px;
+            color: #ddccff;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .cta-button {
+            background-color: #15749d;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s;
+            text-shadow: none;
+        }
+
+        .cta-button:hover {
+            background-color: #1c96ca;
+        }
+
+        .welcome-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .features-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .feature-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .feature-box h3 {
+            color: #15749d;
+            margin-top: 0;
+        }
+
+        .feature-box p {
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+        }
+        .grid:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transform: scale(1.10);
+        }
+        .feature-box:hover {
+            transform: scale(1.05);
+            border-color: #15749d;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <section class="header-section">
+            <h2>Apex Web Design</h2>
+            <p>Crafting Modern Websites That Inspire</p>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Apex</h1>
+        <p>We build responsive, high-performance websites tailored to your brand's unique vision.</p>
+        <a href="Projects.html" class="cta-button">View Our Work</a>
+    </section>
+
+    <section class="welcome-section">
+        <h2 style="font-size: 32px;">Why Choose Us?</h2>
+        <div style="width: 100px; height: 4px; background: #15749d; margin: 10px auto;"></div>
+        
+        <div class="features-grid">
+            <div class="feature-box">
+                <h3>Modern Design</h3>
+                <p>We use the latest design trends to ensure your website looks fresh, professional, and trustworthy.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Mobile Ready</h3>
+                <p>Every site we build is fully responsive, looking great on phones, tablets, and desktops.</p>
+            </div>
+            <div class="feature-box">
+                <h3>SEO Friendly</h3>
+                <p>Clean code and optimized structure to help your business rank better in search results.</p>
+            </div>
+        </div>
+    </section>
+<footer style="text-align: center; padding: 20px; background: #220066; color: #ddccff; margin-top: 40px;">
+    &copy; 2024 Apex Web Design/group6. All rights reserved.
+</footer>
+</body>
+</html>
